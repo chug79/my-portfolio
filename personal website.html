@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Style for active link in the sidebar */
+    /* Style for the active button */
+    .w3-bar-item.w3-active, .w3-bar-item:hover {
+    background-color: #000000; /* Dark gray background on hover or active */
+    color: white; /* White text color */
+    }
+    .w3-bar-item i {
+    color: white; /* Icon color */
+    transition: transform 0.3s ease;
+    }
+    .w3-bar-item:hover i {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    color: #ff5722; /* Highlight color on hover */;
+    }
+/* @extend display-flex; */
+display-flex, .booking-content {
+  display: flex;
+  display: -webkit-flex; }
+
+/* @extend list-type-ulli; */
+list-type-ulli, ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/* poppins-300 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins/poppins-v5-latin-300.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Light"), local("Poppins-Light"), url("../fonts/poppins/poppins-v5-latin-300.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-300.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-300.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-300.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-300.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-300italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/poppins/poppins-v5-latin-300italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Light Italic"), local("Poppins-LightItalic"), url("../fonts/poppins/poppins-v5-latin-300italic.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-300italic.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-300italic.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-300italic.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-300italic.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins/poppins-v5-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Regular"), local("Poppins-Regular"), url("../fonts/poppins/poppins-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-regular.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-regular.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-regular.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-regular.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/poppins/poppins-v5-latin-italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Italic"), local("Poppins-Italic"), url("../fonts/poppins/poppins-v5-latin-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-italic.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-italic.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-italic.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-italic.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-500 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins/poppins-v5-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Medium"), local("Poppins-Medium"), url("../fonts/poppins/poppins-v5-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-500.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-500.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-500.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-500.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-500italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  src: url("../fonts/poppins/poppins-v5-latin-500italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Medium Italic"), local("Poppins-MediumItalic"), url("../fonts/poppins/poppins-v5-latin-500italic.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-500italic.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-500italic.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-500italic.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-500italic.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins/poppins-v5-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins SemiBold"), local("Poppins-SemiBold"), url("../fonts/poppins/poppins-v5-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-600.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-600.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-600.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-600.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins/poppins-v5-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Bold"), local("Poppins-Bold"), url("../fonts/poppins/poppins-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-700.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-700.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-700.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-700.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-700italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/poppins/poppins-v5-latin-700italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Bold Italic"), local("Poppins-BoldItalic"), url("../fonts/poppins/poppins-v5-latin-700italic.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-700italic.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-700italic.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-700italic.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-700italic.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-800 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/poppins/poppins-v5-latin-800.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins ExtraBold"), local("Poppins-ExtraBold"), url("../fonts/poppins/poppins-v5-latin-800.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-800.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-800.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-800.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-800.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-800italic - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  src: url("../fonts/poppins/poppins-v5-latin-800italic.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins ExtraBold Italic"), local("Poppins-ExtraBoldItalic"), url("../fonts/poppins/poppins-v5-latin-800italic.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-800italic.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-800italic.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-800italic.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-800italic.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+/* poppins-900 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins/poppins-v5-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local("Poppins Black"), local("Poppins-Black"), url("../fonts/poppins/poppins-v5-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/poppins/poppins-v5-latin-900.woff2") format("woff2"), url("../fonts/poppins/poppins-v5-latin-900.woff") format("woff"), url("../fonts/poppins/poppins-v5-latin-900.ttf") format("truetype"), url("../fonts/poppins/poppins-v5-latin-900.svg#Poppins") format("svg");
+  /* Legacy iOS */ }
+a:focus, a:active {
+  text-decoration: none;
+  outline: none;
+  transition: all 300ms ease 0s;
+  -moz-transition: all 300ms ease 0s;
+  -webkit-transition: all 300ms ease 0s;
+  -o-transition: all 300ms ease 0s;
+  -ms-transition: all 300ms ease 0s; }
+
+input, select, textarea {
+  outline: none;
+  appearance: unset !important;
+  -moz-appearance: unset !important;
+  -webkit-appearance: unset !important;
+  -o-appearance: unset !important;
+  -ms-appearance: unset !important; }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  appearance: none !important;
+  -moz-appearance: none !important;
+  -webkit-appearance: none !important;
+  -o-appearance: none !important;
+  -ms-appearance: none !important;
+  margin: 0; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  -o-box-shadow: none !important;
+  -ms-box-shadow: none !important; }
+
+input[type=checkbox] {
+  appearance: checkbox !important;
+  -moz-appearance: checkbox !important;
+  -webkit-appearance: checkbox !important;
+  -o-appearance: checkbox !important;
+  -ms-appearance: checkbox !important; }
+
+input[type=radio] {
+  appearance: radio !important;
+  -moz-appearance: radio !important;
+  -webkit-appearance: radio !important;
+  -o-appearance: radio !important;
+  -ms-appearance: radio !important; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+figure {
+  margin: 0; }
+
+p {
+  margin-bottom: 0px; }
+
+h2 {
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 28px; }
+
+.clear {
+  clear: both; }
+
+body {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #fff;
+  background: #ffd9b0;
+  font-weight: 400;
+  font-family: Poppins;
+  margin: 0px; }
+
+.main {
+  padding: 115px 0;
+  position: relative; }
+
+.container {
+  width: 1150px;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+  -o-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+  -ms-box-shadow: 0px 10px 9.9px 0.1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px; }
+
+.booking-content {
+  flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap; }
+
+.booking-image {
+  width: 58.33%;
+  margin-bottom: -8px; }
+
+.booking-img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; }
+
+.booking-form {
+  width: 41.67%;
+  background: #111;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+.form-radio {
+  margin-bottom: 65px;
+  padding-top: 20px; }
+  .form-radio input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -9999px; }
+  .form-radio label {
+    padding-top: 4px; }
+  .form-radio input + label {
+    margin: 0 3px;
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    border: solid 2px #ebebeb;
+    background-color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    color: #888;
+    text-align: center;
+    transition: border-color .15s ease-out,  color .25s ease-out,  background-color .15s ease-out, box-shadow .15s ease-out;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%; }
+  .form-radio input:checked + label {
+    background-color: #111;
+    color: #FFF;
+    border-color: #111;
+    z-index: 1; }
+  .form-radio input:focus + label {
+    outline: none; }
+  .form-radio input:hover {
+    background-color: #111;
+    color: #FFF;
+    border-color: #111; }
+
+.radio-item-list {
+  margin: 0 -3px; }
+
+.active {
+  position: relative;
+  background: #edb77d;
+  padding: 14px 1px;
+  margin-right: 7px;
+  margin-left: 3px;
+  border-radius: 24px;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -o-border-radius: 24px;
+  -ms-border-radius: 24px; }
+  .active:after {
+    position: absolute;
+    content: 'Person';
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 11px;
+    color: #222;
+    font-weight: bold; }
+  .active input + label {
+    margin-right: 59px; }
+
+form {
+  padding: 72px 70px 70px 70px; }
+
+.form-group {
+  margin-bottom: 10px;
+  position: relative; }
+
+.form-input {
+  padding-top: 21px; }
+
+.form-label {
+  position: absolute;
+  transition: 0.25s ease;
+  -moz-transition: 0.25s ease;
+  -webkit-transition: 0.25s ease;
+  -o-transition: 0.25s ease;
+  -ms-transition: 0.25s ease;
+  color: #bebebe;
+  left: 0;
+  top: 23px; }
+
+input {
+  transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  padding-top: 10px;
+  -webkit-appearance: none; }
+  input:focus + .form-label, input:valid + .form-label {
+    top: 1px;
+    font-size: 11px;
+    color: #edb77d; }
+
+input, select {
+  box-sizing: border-box;
+  width: 100%;
+  display: block;
+  border: none;
+  font-family: Poppins;
+  color: #fff;
+  background: transparent;
+  border-bottom: 1px solid #999;
+  padding: 4px 0; }
+  input:focus, select:focus {
+    border-bottom: 1px solid #edb77d; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px transparent inset; }
+
+input::-webkit-input-placeholder {
+  color: #bebebe; }
+input::-moz-placeholder {
+  color: #bebebe; }
+input:-ms-input-placeholder {
+  color: #bebebe; }
+input:-moz-placeholder {
+  color: #bebebe; }
+
+.submit {
+  width: auto;
+  background: #edb77d;
+  color: #fff;
+  padding: 15px 43px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  cursor: pointer; }
+  .submit:hover {
+    background: #e79e50; }
+
+ul {
+  background: 0 0;
+  z-index: 9;
+  border-bottom: 1px solid #999;
+  padding-top: 15px; }
+
+ul li {
+  padding: 5px 0px;
+  z-index: 2;
+  color: #bebebe; }
+
+ul li:not(.init) {
+  display: none;
+  background: #fff;
+  color: #222;
+  padding: 5px 10px; }
+
+ul li:not(.init):hover, ul li.selected:not(.init) {
+  background: #edb77d; }
+
+li.init {
+  cursor: pointer;
+  position: relative; }
+  li.init:after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    font-size: 20px;
+    color: #bebebe;
+    font-family: 'Material-Design-Iconic-Font';
+    content: '\f2f2'; }
+
+.label-radio {
+  display: block;
+  margin-bottom: 18px; }
+
+.vertify-booking {
+  color: #edb77d;
+  font-size: 11px;
+  text-decoration: none;
+  margin-top: 14px;
+  display: block;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s; }
+  .vertify-booking:hover {
+    text-decoration: underline; }
+
+.select-list {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 47px; }
+
+.list-item {
+  position: absolute;
+  width: 100%;
+  color:black }
+
+#time {
+  z-index: 99; }
+
+#food {
+  z-index: 9; }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: calc( 100% - 30px);
+    max-width: 100%;
+    background: transparent; }
+
+  .booking-content {
+    flex-direction: column;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column; }
+
+  .booking-image, .booking-form {
+    width: 100%; }
+
+  .booking-image {
+    order: 2;
+    text-align: center; }
+
+  .booking-form {
+    order: 1;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
+
+  .booking-img {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 100%; } }
+@media screen and (max-width: 480px) {
+  .radio-item {
+    display: block;
+    margin-bottom: 15px;
+    width: 150px; }
+
+  .active {
+    padding: 7px 1px; }
+
+  form {
+    padding: 72px 40px 70px 40px; } }
+
+/*# sourceMappingURL=style.css.map */
+
+  
+
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+        /* General styles */
+    /* General styles */
+    body {
+      margin: 0;
+      background: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      overflow: hidden; /* Prevent scrolling during loading */
+    }
+
+    /* Loading screen */
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1;
+      transition: opacity 1s ease; /* Smooth fade-out effect */
+    }
+
+    /* SVG animation */
+    svg {
+      height: 100px;
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    /* Progress bar container */
+    .progress-container {
+      width: 30%; /* Approximately 4 columns wide */
+      max-width: 300px;
+      height: 4px;
+      background: #333;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+      height: 100%;
+      background: #fff;
+      width: 0;
+      transition: width 5s linear; /* Line fills over 5 seconds */
+    }
+
+    /* Website content */
+    #website-content {
+      display: none; /* Hidden initially */
+    }
+    </style>
+  </head>
+<body class="w3-black">
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <svg viewBox="0 0 100 100">
+    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="6">
+      <!-- Left line -->
+      <path d="M 21 40 V 59">
+        <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        values="0 21 59; 180 21 59"
+        dur="2s"
+        repeatCount="indefinite" />
+      </path>
+      <!-- Right line -->
+      <path d="M 79 40 V 59">
+        <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        values="0 79 59; -180 79 59"
+        dur="2s"
+        repeatCount="indefinite" />
+      </path>
+      <!-- Top line -->
+      <path d="M 50 21 V 40">
+        <animate
+        attributeName="d"
+        values="M 50 21 V 40; M 50 59 V 40"
+        dur="2s"
+        repeatCount="indefinite" />
+      </path>
+      <!-- Bottom line -->
+      <path d="M 50 60 V 79">
+        <animate
+        attributeName="d"
+        values="M 50 60 V 79; M 50 98 V 79"
+        dur="2s"
+        repeatCount="indefinite" />
+      </path>
+      <!-- Top box -->
+      <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
+        <animate
+          attributeName="stroke"
+          values="rgba(255,255,255,1); rgba(100,100,100,0)"
+          dur="2s"
+          repeatCount="indefinite" />
+      </path>
+      <!-- Middle box -->
+      <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z"/>
+      <!-- Bottom box -->
+      <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
+        <animate
+          attributeName="stroke"
+          values="rgba(100,100,100,0); rgba(255,255,255,1)"
+          dur="2s"
+          repeatCount="indefinite" />
+      </path>
+      <animateTransform
+        attributeName="transform"
+        attributeType="XML"
+        type="translate"
+        values="0 0; 0 -19"
+        dur="2s"
+        repeatCount="indefinite" />
+    </g>
+  </svg>
+
+  <!-- Progress Bar -->
+  <div class="progress-container">
+    <div class="progress-bar"></div>
+  </div>
+</div>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="img/pimg.jpeg" style="width:100%">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button w3-black" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>Muneeba</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="img/p2.jpeg" alt="boy" class="w3-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h1 class="w3-text-light-grey">About Me</h1>
+    <hr style="width:200px" class="w3-opacity">
+    <p>"Discover the breathtaking beauty of Pakistan through the lens of a passionate photographer. From the majestic mountains of the north to the serene rivers and vibrant valleys, this account captures the essence of Pakistan's diverse landscapes. Each shot tells a story of nature's artistry, inviting viewers to embark on a visual journey across the country's hidden gems. Whether it's the golden hues of a sunset or the misty peaks of a morning, every photograph reflects a deep connection with the land. Follow along to explore Pakistan's untamed beauty and experience its wonders one frame at a time."
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:70%"></div>
+    </div>
+    <p class="w3-wide">Web Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:57%"></div>
+    </div>
+    <p class="w3-wide">Lightroom</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:40%"></div>
+    </div><br>
+    
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">3+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">20+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">30+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">50+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">Work</h3>
+    <div class="w3-row-padding" style="margin:0 -18px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">5GB Storage</li>
+          <li class="w3-padding-16">Limited Database Support</li>
+          <li class="w3-padding-16">
+            <h2>$10</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">Photography</li>
+          <li class="w3-padding-16">50GB Storage</li>
+          <li class="w3-padding-16">Unlimited Database Support</li>
+          <li class="w3-padding-16">
+            <h2>$25</h2>
+            <span class="w3-opacity">per month</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Reviews</h3>  
+    <img src="https://th.bing.com/th/id/OIP.RgRzvOViwPM2Z6fAnYJq7AHaHY?rs=1&pid=ImgDetMain" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Zaima Khan</span>FinZ</p>
+    <p>Amazing Work!</p><br>
+    
+    <img src="https://th.bing.com/th/id/OIP.A8TRzIiCTEQNzeFL7IhXsAHaHa?w=182&h=182&c=7&r=0&o=5&pid=1.7" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Restaurant</span>Mixed Plate</p>
+    <p>Awesome moments captured!!</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h1 class="w3-text-light-grey">My Photos</h1>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="img/7.jpg" style="width:100%">
+        <img src="img/6.jpg" style="width:100%">
+        <img src="img/8.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="img/9.jpg" style="width:100%">
+        <img src="img/3.jpg" style="width:100%">
+        <img src="img/4.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+
+  <div class="columns">
+  <ul class="price">
+    <li class="header">Basic</li>
+    <li class="grey">$ 9.99 / year</li>
+    <li>10GB Storage</li>
+    <li>10 Emails</li>
+    <li>10 Domains</li>
+    <li>1GB Bandwidth</li>
+    <li class="grey"><a href="#" class="button">Sign Up</a></li>
+  </ul>
+</div>
+<br>
+  <!-- Contact Section -->
+  <div class="w3-padding-74 w3-content w3-text-grey" id="contact">
+    <h1 class="w3-text-light-grey">Contact Me</h1>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Mirpur, AJK</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: 0327-8641145</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: rof757@gmail.com</p>
+    </div><br>
+    <h3>Let's get in touch. Send me a message:</h3>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" style="border-radius: 5px;"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" style="border-radius: 5px;"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject" style="border-radius: 5px;"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" style="border-radius: 5px;"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" style="border-radius: 5px;">
+          <i class="fa fa-paper-plane"></i> Send!
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+<div class="booking-content">
+                <div class="booking-image">
+                    <img class="booking-img" src="img/p3.jpeg" alt="Booking Image">
+                </div>
+                <div class="booking-form">
+                    <form id="booking-form">
+                        <h2>Register Now!</h2>
+                        <div class="form-group form-input">
+                            <input type="text" name="name" id="name" value="" required/>
+                            <label for="name" class="form-label">Your name</label>
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="number" name="phone" id="phone" value="" required />
+                            <label for="phone" class="form-label">Your phone number</label>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="time" id="time"  required>
+                                    <option value="">Timing</option>
+                                    <option value="6pm">Full day</option>
+                                    <option value="7pm">Event Coverage</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="food" id="food" required>
+                                    <option value="">Type</option>
+                                    <option value="Landscape">Landscape</option>
+                                    <option value="Portrait">Portrait</option>
+                                    <option value="Product">Product</option>
+                                    <option value="Event">Event</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <label class="label-radio"> Select Teams</label>
+                            <div class="radio-item-list">
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="2" id="number_people_2" />
+                                    <label for="number_people_2">2</label>
+                                </span>
+                                <span class="radio-item active">
+                                    <input type="radio" name="number_people" value="4" id="number_people_4" checked="checked" />
+                                    <label for="number_people_4">4</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="6" id="number_people_6" />
+                                    <label for="number_people_6">6</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="8" id="number_people_8" />
+                                    <label for="number_people_8">8</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="10" id="number_people_10" />
+                                    <label for="number_people_10">10</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <input type="submit" value="Book now" class="submit" id="submit" name="submit" />
+                            <a href="#" class="vertify-booking">Verify your bookings on Whatsapp</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- END PAGE CONTENT -->
+</div>
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <a href="https://www.instagram.com/the_.50mmx" target="_blank" class="w3-bar-item w3-button">
+    <i class="fa fa-instagram w3-xxlarge"></i>
+  </a>
+  <a href="https://wa.me/03278641145" target="_blank" class="w3-bar-item w3-button">
+    <i class="fa fa-whatsapp w3-xxlarge"></i>
+  </a>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-whatsapp w3-hover-opacity"></i>
+ <p class="w3-small">All rights reserved. No copyright.</p>
+ <!-- End footer -->
+</footer>
+
+
+
+<script type="text/javascript">
+  // Get the container element for the sidebar
+var btnContainer = document.querySelector(".w3-sidebar");
+
+// Get all buttons (links) with class="w3-bar-item" inside the container
+var btns = btnContainer.getElementsByClassName("w3-bar-item");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = btnContainer.getElementsByClassName("w3-active");
+    if (current.length > 0) {
+      current[0].className = current[0].className.replace(" w3-active", "");
+    }
+    this.className += " w3-active";
+  });
+}
+
+</script>
+
+<script>
+// Smooth scrolling for sidebar navigation
+document.querySelectorAll('.w3-sidebar a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    const targetId = this.getAttribute('href').slice(1); // Get target section ID
+    const targetSection = document.getElementById(targetId);
+
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scrolling effect
+        block: 'start' // Align to the top of the section
+      });
+    }
+  });
+});
+</script>
+
+<script>
+  // Wait for the page to load completely
+  window.addEventListener("load", function () {
+    // Start the progress bar animation
+    const progressBar = document.querySelector(".progress-bar");
+    progressBar.style.width = "100%";
+
+    // After 5 seconds, fade out the loading screen and show the main content
+    setTimeout(function () {
+      const loadingScreen = document.getElementById("loading-screen");
+      loadingScreen.style.opacity = "0";
+
+      // After the fade-out transition, hide the loading screen and show the content
+      setTimeout(function () {
+        loadingScreen.style.display = "none"; // Hide the loading screen
+        document.body.style.overflow = "auto"; // Allow scrolling
+        document.getElementById("website-content").style.display = "block"; // Show content
+      }, 1000); // Wait for the fade-out to finish
+    }, 5000); // 5 seconds delay
+  });
+</script>
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
